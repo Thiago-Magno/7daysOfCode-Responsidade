@@ -3,13 +3,75 @@
  --text-color:#A3A3A3;
  --video-button-color:#FFB050;
  --address-button-color:#4894FF;
- --audio-button-color:#ECECEC;    
+ --audio-button-color:#FFFF;   
+ --border-button: #46464620;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Montserrat;
 }
 body{
     background: #F8F4FF;
+}
+button{
+    cursor: pointer;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 0;
+    width: 20.5rem;
+    height: 11rem;
+    background-color: #FFF;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 1rem;
+    
+}
+.headerCard{
+    height: 40%;    
+    border-bottom: #46464620 solid 1px;
+}
+
+/* buttons settings */
+.buttons{
+
+    height: 55%;
+    /* margin: 1rem auto; */
+    
+}
+.callVideo{
+    background-color: var(--video-button-color);
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    height: 3rem;
+    width: 8.7rem;
+    margin: 0.5rem 0.8rem;
+    
+}
+.callAudio{
+    background-color: var(--audio-button-color);
+    border: var(--border-button) 1px solid;
+    border-radius: 8px;
+    height: 3rem;
+    width: 8.7rem;
+    
+}
+.address{
+    border: none;
+    background-color: var(--address-button-color);
+    border-radius: 8px;
+    height: 3rem;
+    width: 18.6rem;
+    color: #FFF;
+    margin: 0.5rem 0.8rem;
+    
+}
+
+.schedule{
+    margin: 0.5rem 1rem;
 }
